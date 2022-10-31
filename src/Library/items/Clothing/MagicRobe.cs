@@ -6,13 +6,13 @@ namespace RoleplayGame.Items
     /// </summary>
     public class MagicRobe : IDefenseItem
     {        
-        Magic magic = new Magic();
-        Robes robe = new Robes();
+        private Magic magic = new Magic();
+        private Robes robe = new Robes();
         public int DefensePower
         {
             get
             {
-                return magic.DefensePower + robe.DefensePower;
+                return this.magic.DefensePower + this.robe.DefensePower;
             }
         }
 
