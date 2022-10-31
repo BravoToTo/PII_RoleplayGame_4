@@ -14,6 +14,13 @@ namespace RoleplayGame.Items
                 return 50;    
             }
         }
+
+        public override string ToString()
+        {
+            return "Fox Blade";
+        }
     }
+
+    
    
 }
