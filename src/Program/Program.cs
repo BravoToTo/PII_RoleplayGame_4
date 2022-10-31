@@ -1,4 +1,7 @@
 ﻿using RoleplayGame.Scenarios;
+using RoleplayGame.Characters;
+using RoleplayGame.Items;
+using RoleplayGame.Encounters;
 
 namespace Program
 {
