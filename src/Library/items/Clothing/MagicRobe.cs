@@ -4,18 +4,21 @@ namespace RoleplayGame.Items
     /// <summary>
     /// Capa mágica. Permite defenderse mas que una capa normal porque magia.
     /// </summary>
-    public class MagicCape : IDefenseItem
-    {        public int DefensePower
+    public class MagicRobe : IDefenseItem
+    {        
+        Magic magic = new Magic();
+        Robes robe = new Robes();
+        public int DefensePower
         {
             get
             {
-                return 20;
+                return magic.DefensePower + robe.DefensePower;
             }
         }
 
         public override string ToString()
         {
-            return "MagicCape";
+            return "Magic Robe";
         }
     }
 }
