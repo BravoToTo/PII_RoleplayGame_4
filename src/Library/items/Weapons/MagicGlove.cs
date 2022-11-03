@@ -1,24 +1,23 @@
 using System.Collections.Generic;
-
+ 
 namespace RoleplayGame.Items
 {
 
   /// <summary>
     /// Guante magico. Su poder se lo da las gemas que estan contenidas en el mismo.
     /// </summary>
-/*public class MagicGlove: IDefenseItem, IAttackItem
+public class MagicGlove: IDefenseItem, IAttackItem
 {
-    private List<Igem> gemsList= new List<Igem>();
+    private List<Gem> gemsList= new List<Gem>();
 
     public int AttackPower
         {   
-            int attack=0;
-            
             get
-            {
-                foreach (Igem gem in this.gemsList)
+            {   
+                int attack=0; 
+                foreach (Gem gem in this.gemsList)
                 {
-                    attack+= gem.AttackPower;
+                    attack+= gem.DamageBuff;
                 } 
                 return attack;   
             }
@@ -26,22 +25,23 @@ namespace RoleplayGame.Items
 
     public int DefensePower
         {   
-            int defense=0;
             
             get
             {
-                foreach (Igem gem in this.gemsList)
+                int defense=0;
+
+                foreach (Gem gem in this.gemsList)
                 {
-                    defense+= gem.DefensePower;
+                    defense+= gem.DefenseBuff;
                 } 
                 return defense;   
             }
         }
-    public void addGem(Igem gem)
+    public void addGem(Gem gem)
     {
         this.gemsList.Add(gem);
     }
-    public void removeGem(Igem gem)
+    public void removeGem(Gem gem)
     {
         this.gemsList.Remove(gem);
     }
@@ -49,5 +49,5 @@ namespace RoleplayGame.Items
         {
             return "Magic glove";
         }
-}*/
+}
 }
