@@ -23,8 +23,8 @@ namespace RoleplayGame.Items
         DragonScaleArmor = 16,
         MagicRobe = 17,
         Shield = 18,
-        TrollCuirass = 19
-
+        TrollCuirass = 19,
+        Catapult = 20
     }
 
     /// <summary>
@@ -59,6 +59,7 @@ namespace RoleplayGame.Items
                 case ItemType.MagicRobe: return new MagicRobe();
                 case ItemType.Shield: return new Shield();
                 case ItemType.TrollCuirass: return new TrollCuirass();
+                case ItemType.Catapult: return new Catapult();
 
                 default: return null;
             }
